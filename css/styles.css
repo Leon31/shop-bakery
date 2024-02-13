@@ -267,6 +267,25 @@ ul {
     margin-bottom: 80px;
 }
 
+.carousel-button {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--color-primary-dark);
+    border-radius: 50%;
+    background-color: transparent;
+    fill: var(--color-primary-dark);
+    cursor: pointer;
+}
+
+.carousel-button:hover {
+    background-color: var(--color-primary-dark);
+    fill: var(--color-primary-light);
+}
+
 .formats-list {
     display: flex;
     flex-wrap: wrap;
@@ -327,6 +346,18 @@ ul {
     font-size: 16px;
     font-weight: 300;
     text-decoration: none;
+}
+
+.footer-address-link:hover {
+    color: var(--color-brand-normal);
+}
+
+.footer-adress-social {
+    fill: var(--color-primary-light);
+}
+
+.footer-adress-social:hover {
+    fill: var(--color-brand-normal);
 }
 
 .footer-privacy-link {
