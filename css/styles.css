@@ -40,7 +40,9 @@
 }
 
 /* BASE */
-* {
+*,
+*::after,
+*::before {
     box-sizing: border-box;
 }
 
@@ -58,6 +60,10 @@ body {
 
 h1, h2, h3, h4, h5, h6, p {
     margin-top: 0;
+}
+
+a {
+    display: inline-block;
 }
 
 address {
@@ -236,6 +242,10 @@ ul {
     max-width: 340px;
 }
 
+.traditions-image {
+    border-radius: 400px 400px 0 0;
+}
+
 /* CHEFS SECTION */
 .chefs-title {
     max-width: 520px;
@@ -250,21 +260,50 @@ ul {
     border: 2px solid var(--color-brand-light);
 }
 
+.chefs-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.chef-item {
+    flex-basis: calc((100% - 30px) / 2);
+}
+
+.chef-card {
+    display: flex;
+    gap: 30px;
+}
+
 .chef-photo {
     border-radius: 4px 4px 4px 200px;
     box-shadow: -16px 16px 0 0 var(--color-primary-light), 
                 -16px 16px 0 1px var(--color-secondary-dark); 
 }
 
-.chefs-article-title {
+.chef-article-title {
     margin-bottom: 16px;
     font-size: 40px;
     font-weight: 600;
 }
 
+.chef-nastya-text p {
+    margin-bottom: 24px;
+}
+
+.chef-nastya-text p:last-child {
+    margin-bottom: 0;
+}
+
 /* FORMATS SECTION */
 .formats-title {
     margin-bottom: 80px;
+}
+
+.formats-flex-container {
+    display: flex;
+    align-items: center;
+    gap: 32px;
 }
 
 .carousel-button {
@@ -274,6 +313,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
     border: 1px solid var(--color-primary-dark);
     border-radius: 50%;
     background-color: transparent;
@@ -322,23 +362,58 @@ ul {
 }
 
 /* CONTACTS SECTION */
+.contacts-section {
+    padding-bottom: 96px;
+}
+
 .contacts-title {
     margin-bottom: 16px;
 }
 
+.contacts-flex-container {
+    display: flex;
+    gap: 32px;
+}
+
 .contacts-map {
+    flex-shrink: 0;
     width: 100%;
     max-width: 603px;
+    border: none;
+    border-radius: 16px;
 }
 
 /* FOOTER SECTION */
 
 .footer {
+    padding: 32px 0;
     background-color: var(--color-primary-dark);
     background-image: url(../images/footer-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.footer-flex-container {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-nav, 
+.footer-adress {
+    flex-basis: 50%;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-logo,
+.footer-menu {
+    flex-basis: 50%;
+}
+
+.footer-contacts,
+.footer-privacy-copyright {
+    flex-basis: 50%;
 }
 
 .footer-address-link {
