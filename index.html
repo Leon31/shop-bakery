@@ -153,18 +153,18 @@
                     <div class="contacts-form">
                         <h2 class="contacts-title section-title">Приєднуйся до мережі пекарень</h2>
                         <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-                            <form name="contacts-form" autocomplete="off" novalidate>
+                            <form name="contacts-form" autocomplete="off">
                                 <div class="form-field">
                                     <label class="form-label visually-hidden" for="user-name"> Ім'я </label>
-                                    <input class="form-input" type="text" name="user-name" id="user-name" placeholder="Ім'я">
+                                    <input class="form-input" type="text" name="user-name" id="user-name" placeholder="Ім'я" minlength="2" maxlength="25" required>
                                 </div>
                                 <div class="form-field">
                                     <label class="form-label visually-hidden" for="user-phone"> Телефон </label>
-                                    <input class="form-input" type="tel" name="user-phone" id="user-phone" placeholder="Телефон">
+                                    <input class="form-input" type="tel" name="user-phone" id="user-phone" placeholder="Телефон" pattern="^\+[0-9]{12}" required>
                                 </div>
                                 <div class="form-field">
                                     <label class="form-label visually-hidden" for="user-email"> Електрона пошта </label>
-                                    <input class="form-input" type="email" name="user-email" id="user-email" placeholder="Електрона пошта">
+                                    <input class="form-input" type="email" name="user-email" id="user-email" placeholder="Електрона пошта" required>
                                 </div>
                                 <button class="order-call-btn modal-btn" type="submit"> Замовити дзвінок </button>
                                 <p class="modal-terms"> Натискаючи на кнопку я погоджуюсь <a class="modal-terms-link" href="#">з політикою
