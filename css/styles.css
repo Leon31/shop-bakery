@@ -573,10 +573,34 @@ ul {
     line-height: 1.17;
 }
 
-.modal-btn {
-    display: block;
-    margin: 0 auto 24px;
+/*  .checkbox-field {
+    position: relative;
 }
+
+.terms-check {
+    appearance: none;
+}
+
+.terms-check:checked + .terms-check-label::before {
+    background-color: #465929;
+}
+
+.terms-check-label {
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.terms-check-label::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    border: 1px solid var(--color-primary-dark);
+    border-radius: 2px;
+} */
+
 
 .modal-terms {
     width: 220px;
@@ -586,13 +610,4 @@ ul {
     line-height: 1.46;
     text-align: center;
     color: var(--color-primary-dark);
-}
-
-.modal-terms-link {
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 1.46;
-    text-align: center;
-    color: var(--color-primary-dark);
-    text-underline-offset: 2px;
 }

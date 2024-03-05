@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Сучасна пекарня</title>
-<link rel="stylesheet" href="./css/styles.css">
+<link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
    <header class="header">
@@ -107,6 +107,7 @@
                     <ul class="formats-list">
                                 <li class="format-item">
                                     <article class="format-card">
+                                        <img class="format-image" src="./images/walrus.jpg" alt="Walrus Interior">
                                         <h3 lang="en" class="formats-article-title"> Walrus </h3>
                                         <div class="formats-atricle-text">
                                             <p>Площа: до 120 м2</p>
@@ -118,6 +119,7 @@
                                 </li>
                                 <li class="format-item">
                                     <article class="format-card">
+                                        <img class="format-image" src="./images/horseshoe.jpg" alt="Horseshoe Interior">
                                         <h3 lang="en" class="formats-article-title"> Horseshoe </h3>
                                         <div class="formats-atricle-text">
                                             <p>Площа: до 25 м2</p>
@@ -129,6 +131,7 @@
                                 </li>
                                 <li class="format-item">
                                     <article class="format-card">
+                                        <img class="format-image" src="./images/handlebar.jpg" alt="Handlebar Interior">
                                         <h3 lang="en" class="formats-article-title"> Handlebar </h3>
                                         <div class="formats-atricle-text">
                                             <p>Площа: до 15 м2</p>
@@ -231,7 +234,7 @@
         <button class="modal-btn-close" type="button"> Close </button>
         <h2 class="modal-title section-title centered"> Замовити дзвінок </h2>
         <p class="modal-form-text"> Залишіть заявку та наш спеціаліст зв'яжеться з Вами! </p>
-        <form name="modal-form" autocomplete="off" novalidate>
+        <form name="modal-form" autocomplete="off">
             <div class="form-field">
                 <label class="form-label visually-hidden" for="user-name"> Ім'я </label>
                 <input class="form-input" type="text" name="user-name" id="user-name" placeholder="Ім'я">
@@ -244,6 +247,10 @@
                 <label class="form-label visually-hidden" for="user-email"> Електрона пошта </label>
                 <input class="form-input" type="email" name="user-email" id="user-email" placeholder="Електрона пошта">
             </div>
+            <!-- <div class="form-field checkbox-field">
+                <input type="checkbox" class="terms-check visually-hidden" name="terms-check" id="terms-check" required>
+                <label for="terms-check" class="terms-check-label"> Я погоджуюсь з політикою конфіденційності</label>
+            </div> -->
             <button class="order-call-btn modal-btn" type="submit"> Замовити дзвінок </button>
             <p class="modal-terms"> Натискаючи на кнопку я погоджуюсь <a class="modal-terms-link" href="#">з політикою конфіденційності</a></p>
         </form>

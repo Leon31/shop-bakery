@@ -1,0 +1,18 @@
+.nav-link {
+    color: var(--color-primary-light);
+    text-decoration: none;
+    transition: color, 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--color-brand-normal);
+}
+
+.modal-terms-link {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.46;
+    text-align: center;
+    color: var(--color-primary-dark);
+    text-underline-offset: 2px;
+}
